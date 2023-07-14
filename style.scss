@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 1.6rem;
+	background-image: linear-gradient(315deg, #c2118d 0%, #ff503c 74%);
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+input {
+	margin-top: 1em;
+	padding: 0.5em;
+	font-size: 1.6rem;
+	color: #fff;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #fff;
+}
+input::placeholder,:focus {
+	color: #fff;
+    outline: none;
+}
+
+.wrapper {
+	width: 800px;
+	padding: 1em 2em;
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 2px solid #fff;
+	border-radius: 20px;
+}
+
+.top {
+	height: 260px;
+}
+.bottom {
+	height: 140px;
+}
+
+.more-info {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 200px;
+}
+
+.photo {
+	width: 140px;
+	height: 140px;
+	object-fit: contain;
+}
+
+.city-name {
+	font-size: 4rem;
+}
+.btn {
+	margin-left: 1em;
+	padding: 0.5em 1em;
+	font-size: 1.6rem;
+    color: #fff;
+    background: none;
+	text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+
+    &:hover{
+        background-color: #ff503c;
+
+    }
+}
+
+.info, .info-result{
+    display: flex;
+    align-items: center;
+    
+    & p{
+        width: 33.3%;
+        text-align: center;
+    }
+}
+.info{
+    height: 35%;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+}
+.info-result{
+    height: 62.5%;
+    font-size: 3rem;
+}
+
+.warning{
+    margin-top: 1em;
+    color: red;
+    font-size: 1.6rem;
+}
